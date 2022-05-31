@@ -112,6 +112,5 @@ let i = "0";
 while(i < 6) {
     ad +=sign;
     i++;
-    
     console.log(ad);
 }
