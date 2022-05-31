@@ -91,3 +91,27 @@ for (let i = 1; i <= 100; i++)
     console.log (i );
   }
 }
+
+// ex 3
+// try to recreate this form using a loop :
+
+// *
+
+// **
+
+// ***
+
+// ****
+
+// *****
+
+// ******
+let sign = "*";
+let ad = "";
+let i = "0";
+while(i < 6) {
+    ad +=sign;
+    i++;
+    
+    console.log(ad);
+}
