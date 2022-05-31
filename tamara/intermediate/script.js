@@ -4,6 +4,21 @@ var students = [['Martin', 76], ['Thomas', 85], ['Klaus', 65], ['Maria', 93], ['
 
 var Avgmarks = 0;
 
+students.forEach((students) => {
+    let grade = students[1];
+    if (grade < 60) {
+      console.log(students[0] + " has " + students[1] + " points and grade : F");
+    } else if (grade < 70) {
+      console.log(students[0] + " has " + students[1] + " points and grade : D");
+    } else if (grade < 80) {
+      console.log(students[0] + " has " + students[1] + " points and grade : C");
+    } else if (grade < 90) {
+      console.log(students[0] + " has " + students[1] + " points and grade : B");
+    } else if (grade < 100) {
+      console.log(students[0] + " has " + students[1] + " points and grade : A");
+    }
+  });
+
 for (var i=0; i < students.length; i++) {
         Avgmarks += students[i][1];
         var avg = (Avgmarks/students.length);
