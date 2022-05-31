@@ -30,18 +30,23 @@ if (weatherTemp1 < 11) {
 //   ex 3 | Temperature v2.0
 // Now when you have program Temperature v1.0 done it time to upgrade it to the version 2.0. Now you should create a nice looking responsive front-end for your program (mobile friendly) and create more messages (e.g. if the temperature is above 32c output "The weather is hot" etc.) and you should display a proper image for the current weather condition.
   
-
+  let text = document.getElementById("text");
+  let image = document.getElementById("image");
   let weatherTemp = getRandumNumber(-5, 50);
+  let cold = "pictures/cold.jpg";
+  let hot = "pictures/hot.jpg";
+  let moderate = "pictures/moderate.jpg";
 if (weatherTemp < 11) {
-  console.log(weatherTemp + " °C");
-  console.log("The weather is cold");
+  image.src = cold;
+  text.innerHTML = ("The weather is cold today. The air temperature it is " + weatherTemp + " °C");
 } else if (weatherTemp > 32) {
-  console.log(weatherTemp + " °C");
-  console.log("The weather is hot");
+  image.src = hot;
+  text.innerHTML = ("The weather is hot today. The air temperature it is " + weatherTemp + " °C");
 } else {
-  console.log(weatherTemp + " °C");
-  console.log("The weather is moderate");
+  image.src = moderate;
+  text.innerHTML = ("The weather is moderate today. The air temperature it is " + weatherTemp + " °C");
 };
+
 
 
 
